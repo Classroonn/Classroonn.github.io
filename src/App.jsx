@@ -53,7 +53,7 @@ const safeStorage = {
 export default function App() {
   const [theme, setTheme] = useState(() => {
     const saved = safeStorage.getItem('unblocked-theme');
-    return saved && ['cyborg', 'violet', 'ice', 'rose-pine', 'none'].includes(saved) ? saved : 'violet';
+    return saved && ['cyborg', 'violet', 'ice', 'rose-pine', 'none'].includes(saved) ? saved : 'none';
   });
   const [mode, setMode] = useState(() => {
     return safeStorage.getItem('unblocked-mode') || 'dark';
@@ -507,7 +507,7 @@ export default function App() {
               <School className="w-5.5 h-5.5" />
             </div>
             <div>
-              <span className="text-xl font-bold tracking-tight text-[var(--text-primary)] block group-hover:text-[var(--accent-color)] transition-colors">Classroom</span>
+              <span className="text-xl font-bold tracking-tight text-[var(--text-primary)] block group-hover:text-[var(--accent-color)] transition-colors"></span>
             </div>
           </div>
         </div>
@@ -699,18 +699,18 @@ export default function App() {
                   <p className="text-xs text-[var(--text-muted)] mt-1">Try searching a different keyword or resetting filters.</p>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                   {filteredGames.map(game => {
                     const isFav = favorites.includes(game.id);
                     return (
                       <div 
                         key={game.id}
                         onClick={() => { setSelectedGame(game); setZoom(1); }}
-                        className="custom-card flex flex-col rounded-xl overflow-hidden cursor-pointer h-[320px]"
+                        className="custom-card flex flex-col rounded-xl overflow-hidden cursor-pointer h-[360px]"
                         style={{ contentVisibility: 'auto' }}
                       >
                         {/* Artwork container */}
-                        <div className="relative h-36 bg-neutral-950 flex-shrink-0 flex items-center justify-center border-b border-[var(--card-border)] overflow-hidden">
+                        <div className="relative h-48 bg-neutral-950 flex-shrink-0 flex items-center justify-center border-b border-[var(--card-border)] overflow-hidden">
                           {game.thumbnail ? (
                             <img 
                               src={game.thumbnail} 
@@ -754,7 +754,7 @@ export default function App() {
                             className="w-full mt-3 border border-[var(--accent-color)] hover:bg-[var(--accent-color)] hover:text-black hover:font-bold hover:shadow-[0_0_12px_calc(var(--accent-color))] text-[11px] font-semibold tracking-wider text-[var(--accent-color)] py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-all duration-200 self-end"
                           >
                             <Play className="w-3 h-3 fill-current" />
-                            <span>LAUNCH PROGRAM</span>
+                            <span>Open Article</span>
                           </button>
                         </div>
                       </div>
@@ -779,7 +779,7 @@ export default function App() {
                   className="flex items-center gap-2 border border-[var(--card-border)] hover:border-[var(--accent-color)] text-[var(--text-primary)] hover:text-[var(--accent-color)] transition-all font-mono py-1.5 px-3.5 rounded-lg text-xs font-bold leading-normal cursor-pointer"
                 >
                   <ArrowLeft className="w-3.5 h-3.5" />
-                  <span>CLOSE WINDOW</span>
+                  <span>Go back</span>
                 </button>
 
                 {/* Title & category badge info */}
@@ -819,7 +819,7 @@ export default function App() {
                       className="p-1 px-1.5 text-xs text-[var(--accent-color)] font-mono hover:bg-[var(--card-bg)] rounded transition-colors"
                       title="Reset Zoom"
                     >
-                      Res
+                
                     </button>
                   </div>
 

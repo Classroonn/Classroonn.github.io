@@ -12,18 +12,10 @@ export const games: Game[] = [
   },
   {
     id: 'game-111',
-    title: 'Chatgpt',
-    description: 'CAN ADD IMAGES. Wait for a minute if you do not get a response. MUTIPLE AIS, INCLUDING CHATGPT.',
-    url: 'https://tharaniidaran-t.github.io/GroqAi/',
+    title: 'Chatgpt (GROQ API)',
+    description: 'Go to the doc and get a API or swap your model if it says max token limit reached. ',
+    url: 'https://tharaniidaran-t.github.io/GroqAI2/',
     thumbnail: 'https://www.internetmatters.org/wp-content/uploads/2025/06/Chat-GPT-logo.webp',
-    category: 'AI'
-  },
-  {
-    id: 'game-2',
-    title: 'Gemini',
-    description: 'CAN ADD IMAGES. Wait for a minute if you do not get a response.',
-    url: 'https://extrastuffforwebsite.vercel.app/',
-    thumbnail: 'https://sm.pcmag.com/pcmag_me/review/g/google-gem/google-gemini_yr4d.jpg',
     category: 'AI'
   },
   {
@@ -108,14 +100,6 @@ export const games: Game[] = [
     category: 'Driving'
   },
   {
-    id: 'game-14',
-    title: 'Five Nights At Epsteins',
-    description: 'BROKEN ON ALL WEBSITES BECAUSE SCHOOLS GOT IT TAKEN DOWN',
-    url: 'https://freedomgamingzone.github.io/five-nights-at-epsteins/',
-    thumbnail: 'https://assets1.cbsnewsstatic.com/hub/i/r/2026/04/03/645aef00-55f1-42be-bbbe-bf28a324d9e2/thumbnail/1280x720/1d1a0fc884f8bf7fb07a38e5ad410c05/e68b6374bfe38c8de8ccbd2be30cd9e2.jpg',
-    category: 'Horror'
-  },
-  {
     id: 'game-15',
     title: 'Minecraft Launcher',
     description: 'Fun to play with your friends and by yourself.',
@@ -128,7 +112,7 @@ export const games: Game[] = [
     title: 'Bloons TD6 copy',
     description: 'A knockoff',
     url: 'https://script.google.com/macros/s/AKfycbxGkuDci2OlaMQBNYG1oQGdZSyJ86D3D39ZmTx2JFsqpxUObjTShnMUX8ApzlVzDRAY/exec',
-    thumbnail: 'https://img.freepik.com/premium-vector/tower-defense-3d-text-effect-editable-text-style-suitable-game-assets_412327-826.jpg',
+    thumbnail: 'bloons.jpg',
     category: 'Solo or Multiplayer.'
   },
   {
@@ -191,7 +175,7 @@ export const games: Game[] = [
     id: 'game-47',
     title: 'FIFA 11',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clFIFA11.html',
+    url: '/clFIFA11.html',
     thumbnail: 'https://upload.wikimedia.org/wikipedia/en/f/f5/Fifa11_Game_Cover.jpg',
     category: 'solo'
   },
@@ -199,7 +183,7 @@ export const games: Game[] = [
     id: 'game-48',
     title: 'Madden 2002',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clmaddennfl2002.html',
+    url: '/clmaddennfl2002.html',
     thumbnail: 'https://upload.wikimedia.org/wikipedia/en/a/a0/Madden_NFL_2002_Coverart.png',
     category: 'solo'
   },
@@ -207,7 +191,7 @@ export const games: Game[] = [
     id: 'game-49',
     title: 'Call of Duty 4',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clcod4.html',
+    url: '/clcod4.html',
     thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg',
     category: 'solo'
   },
@@ -215,7 +199,7 @@ export const games: Game[] = [
     id: 'game-50',
     title: 'GTA Advance',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clgrandtheftautoadvance.html',
+    url: '/clgrandtheftautoadvance.html',
     thumbnail: 'https://m.media-amazon.com/images/M/MV5BNjRhYzk1ODItYjFhNy00OGU4LWE2YjAtZTk3NmRlNDhiZTFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     category: 'solo'
   },
@@ -223,7 +207,7 @@ export const games: Game[] = [
     id: 'game-51',
     title: 'NFS: Most Wanted',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clnfsmostwanted.html',
+    url: '/clnfsmostwanted.html',
     thumbnail: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1262560/capsule_616x353.jpg?t=1777484382',
     category: 'solo'
   },
@@ -239,7 +223,7 @@ export const games: Game[] = [
     id: 'game-53',
     title: 'Pokemon Platinum',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clpokeplatinum.html',
+    url: '/clpokeplatinum.html',
     thumbnail: 'https://upload.wikimedia.org/wikipedia/en/c/ca/Pokemon_Platinum.png',
     category: 'solo'
   },
@@ -247,7 +231,7 @@ export const games: Game[] = [
     id: 'game-54',
     title: 'Pokemon Black 2',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/clpokeblack2.html;',
+    url: '/clpokeblack2.html',
     thumbnail: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_ds_22/SI_NDS_PokemonBlackAndWhite2_Black_enGB_image1600w.jpg',
     category: 'solo'
   },
@@ -255,16 +239,8 @@ export const games: Game[] = [
     id: 'game-55',
     title: 'Tomodachi Collection',
     description: 'yeah',
-    url: 'https://granddia2.github.io/games/cltomodachicollection.html;',
+    url: '/cltomodachicollection.html',
     thumbnail: 'https://i.ytimg.com/vi/H96rM_liOHo/maxresdefault.jpg',
-    category: 'solo'
-  },
-   {
-    id: 'game-56',
-    title: 'Pokemon SoulSilver',
-    description: 'yeah',
-    url: 'https://granddia2.github.io/games/clpokesoulsilver.html;',
-    thumbnail: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_ds_22/SI_NDS_PokemonSoulSilver_enGB_image1600w.jpg',
     category: 'solo'
   },
   // ── MULTIPLAYER ──
@@ -410,14 +386,6 @@ export const games: Game[] = [
     description: 'Make sure to say Uno',
     url: 'https://script.google.com/macros/s/AKfycbyOGsDEwmKxazJAHOb9fXbJFZM0LwmZJPkmKdLKa1qPY6OWfKIP9GcqbnkRf0JbUWmERQ/exec',
     thumbnail: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000034088/ac97854c142c719f8ae843106d43511db61822eb9bdb78e2c1a98ea0ae3b6c08',
-    category: 'Multiplayer'
-  },
-  {
-    id: 'game-41',
-    title: 'Make it meme',
-    description: 'unblocked now',
-    url: 'https://doraedu52.github.io/g22/class-368',
-    thumbnail: 'https://makeitmeme.com/header.webp',
     category: 'Multiplayer'
   },
   {
